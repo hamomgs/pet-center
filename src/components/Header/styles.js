@@ -5,10 +5,7 @@ import bgImg from '../../assets/background.png'
 export const Header = styled.header`
   position: relative;
   z-index: 9;
-  background-image: linear-gradient(to left, #0008 50%, #0008 50%), url(${bgImg});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+  background-color: #008585;
 `
 
 export const Title = styled.h2`
@@ -41,11 +38,11 @@ export const NavLink = styled(Link)`
   transition: all 0.5s ease;
 
   &.selected {
-    color: #008585;
+    color: #00453A;
   }
     
   :hover {
-    color: #008585;
+    color: #00453A;
   }
 `
 
@@ -63,7 +60,7 @@ export const ContactLink = styled.a`
   background-color: #fff;
 
   :hover {
-    background-color: #008585;
+    background-color: #00453A;
     color: #fff;
   }
 

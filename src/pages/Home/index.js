@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <S.HomeSection>
       <S.Container>
-        <S.Title>Tosa e cuidados com pets</S.Title>
+        <S.Title>Tosa e cuidados para pets</S.Title>
         <S.P>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magma aliqua.
