@@ -8,5 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     font-family: 'DM Sans', sans-serif;
+    outline: none;
+  }
+
+  body {
+    background-color: #F6F8F8;
   }
 `

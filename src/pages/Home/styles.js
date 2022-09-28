@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import bgImg from '../../assets/background.png'
+import bgImg from '../../assets/background.jpg'
 
 export const HomeSection = styled.section`
   width: 100%;
@@ -8,19 +7,19 @@ export const HomeSection = styled.section`
   background-image: linear-gradient(to left, #0008 50%, #0008 50%), url(${bgImg});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: 0 80px;
   margin-top: -80px;
-  padding-top: 5vw;
+  padding-top: 8vw;
 `
 
 export const Container = styled.div`
   max-width: 1200px;
   margin: 80px auto;
-  padding: 0 25px;
+  padding: 0 25px 150px 0;
 `
 
 export const Title = styled.h1`
-  width: 35%;
+  width: 45%;
   color: #fff;
   font-size: 50px;
   padding-bottom: 30px;
@@ -34,17 +33,18 @@ export const P = styled.p`
   line-height: 30px;
 `
 
-export const SeeMore = styled(Link)`
+export const ScheduleBtn = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  width: 200px;
-  height: 50px;
+  gap: 16px;
+  width: 260px;
+  height: 52px;
   border: solid 2px #fff;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
+  text-transform: uppercase;
   color: #fff;
   transition: all 0.5s ease;
   margin: 30px 0;
@@ -53,5 +53,9 @@ export const SeeMore = styled(Link)`
   :hover {
     background-color: #fff;
     color: #008585;
+  }
+
+  * {
+    font-size: 20px;
   }
 `

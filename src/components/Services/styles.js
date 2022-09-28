@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const ServicesSection = styled.section`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 25px 0 25px;
 `
 
 export const ServicesContainer = styled.div`
@@ -9,12 +12,14 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 25px;
 `
 
-export const Title = styled.h1`
+export const LittleTitle = styled.h4`
+  text-align: center;
+  color: #00856F;
+`
+
+export const Title = styled.h2`
   width: 550px;
   margin: 30px auto;
   text-align: center;

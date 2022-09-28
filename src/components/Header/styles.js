@@ -1,16 +1,24 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import bgImg from '../../assets/background.png'
 
 export const Header = styled.header`
-  position: relative;
-  z-index: 9;
   background-color: #008585;
 `
 
 export const Title = styled.h2`
   font-size: 30px;
   color: #fff;
+  cursor: default;
+  user-select: none;
+  
+  span {
+    font-weight: 400;
+    padding-left: 10px;
+  }
+  
+  *:nth-child(1) {
+    color: #b3e5e4;
+  }
 `
 
 export const NavigationMenu = styled.nav`
@@ -34,15 +42,18 @@ export const Ul = styled.ul`
 
 export const NavLink = styled(Link)`
   color: #fff;
-  font-weight: bold;
-  transition: all 0.5s ease;
-
+  font-weight: 500;
+  transition: color 0.5s ease;
+  
   &.selected {
-    color: #00453A;
+    color: #b3e5e4;
+    padding-bottom: 25px;
+    border-bottom: solid 5px #b3e5e4;
+    cursor: default;
   }
     
   :hover {
-    color: #00453A;
+    color: #b3e5e4;
   }
 `
 
@@ -50,17 +61,20 @@ export const ContactLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  width: 200px;
+  gap: 16px;
+  width: 250px;
   height: 50px;
+  border: solid 2px #fff;
   border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
   font-weight: bold;
   color: #008585;
   transition: all 0.5s ease;
   background-color: #fff;
 
   :hover {
-    background-color: #00453A;
+    background-color: transparent;
     color: #fff;
   }
 
