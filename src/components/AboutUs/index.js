@@ -18,7 +18,7 @@ export default function AboutUs() {
           especialistas, exames e serviços, como táxi dog, farmácia e banho e tosa.
           Além disso, o atendimento é personalizado e visa atender as necessidades
           específicas de cada pet. Nosso foco não é apenas atender a todos mas também dar
-          auxílio a animais de rua aravés de adoções e apadrinhamento.
+          auxílio a animais de rua através de adoções e apadrinhamento.
         </S.P>
       </S.AboutContainer>
     </S.AboutUsSection>

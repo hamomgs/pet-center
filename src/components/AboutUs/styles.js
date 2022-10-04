@@ -7,7 +7,7 @@ export const AboutUsSection = styled.section`
   gap: 67px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 150px 25px 0 25px;
+  padding: 200px 25px 100px 25px;
 `
 
 export const Image = styled.img`
@@ -20,7 +20,7 @@ export const AboutContainer = styled.div`
 `
 
 export const LittleTitle = styled.h4`
-  color: #00856F;
+  color: var(--primary-color);
 `
 
 export const Title = styled.h2`
