@@ -17,6 +17,16 @@ export const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
+  ::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+  }
+
   body {
     background-color: #F6F8F8;
   }
