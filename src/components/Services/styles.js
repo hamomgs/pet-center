@@ -16,7 +16,7 @@ export const ServicesContainer = styled.div`
 
 export const LittleTitle = styled.h4`
   text-align: center;
-  color: #00856F;
+  color: var(--primary-color);
 `
 
 export const Title = styled.h2`
@@ -36,15 +36,15 @@ export const ServiceBox = styled.div`
   height: 230px;
   padding: 24px;
   border-radius: 6px;
-  border: solid 2px #DCE9E2;
+  border: solid 2px var(--secondary-color);
 `
 
 export const Icon = styled(FontAwesomeIcon)`
   padding: 10px;
   border-radius: 50%;
   font-size: 12px;
-  color: #00856F;
-  background-color: #DCE9E2;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 `
 
 export const ServiceTitle = styled.h3`
