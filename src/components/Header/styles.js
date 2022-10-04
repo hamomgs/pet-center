@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const Header = styled.header`
-  background-color: #008585;
+  background-color: var(--primary-color);
 `
 
 export const Title = styled.h2`
@@ -41,44 +41,41 @@ export const Ul = styled.ul`
 `
 
 export const NavLink = styled(Link)`
+  position: relative;
   color: #fff;
+  transition: color 0.2s ease;
   font-weight: 500;
-  transition: color 0.5s ease;
+  z-index: 1;
   
+  &:after {
+    content: '.';
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 0;
+    height: 5px;
+    text-align: left;
+    opacity: 0;
+    color: transparent;
+    transition: all 0.5s;
+    background-color: #b3e5e4;
+  }
+  
+  &.selected:after {
+    width: 100%;
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
+
   &.selected {
     color: #b3e5e4;
-    padding-bottom: 25px;
-    border-bottom: solid 5px #b3e5e4;
     cursor: default;
   }
     
   :hover {
     color: #b3e5e4;
-  }
-`
-
-export const ContactLink = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  width: 250px;
-  height: 50px;
-  border: solid 2px #fff;
-  border-radius: 10px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
-  color: #008585;
-  transition: all 0.5s ease;
-  background-color: #fff;
-
-  :hover {
-    background-color: transparent;
-    color: #fff;
-  }
-
-  * {
-    font-size: 20px;
   }
 `

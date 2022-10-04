@@ -6,7 +6,6 @@ import Adopt from '../../pages/Adopt/index.js'
 import PageNotFound from '../../pages/PageNotFound/index.js'
 import Products from '../../pages/Products/index.js'  
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faPaw } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
@@ -38,16 +37,12 @@ export default function Header() {
               <S.NavLink to='/home' id='home'>Home</S.NavLink>
             </li>
             <li onClick={e => handleClickColor('adopt', e)}>
-              <S.NavLink to='/adote' id='adopt'>Adote</S.NavLink>
+              <S.NavLink to='/adote' id='adopt'>Adoção</S.NavLink>
             </li>
             <li onClick={e => handleClickColor('products', e)}>
               <S.NavLink to='/produtos' id='products'>Produtos</S.NavLink>
             </li>
           </S.Ul>
-          <S.ContactLink href='https://api.whatsapp.com/send?phone=5531978649999' title='Entre em contato pelo whatsapp'>
-            <FontAwesomeIcon icon={faWhatsapp} ></FontAwesomeIcon>
-            Agende uma consulta
-          </S.ContactLink>
         </S.NavigationMenu>
 
       </S.Header>
