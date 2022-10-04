@@ -15,7 +15,7 @@ export const HomeSection = styled.section`
 export const Container = styled.div`
   max-width: 1200px;
   margin: 80px auto;
-  padding: 0 25px 150px 0;
+  padding: 0 25px 150px 25px;
 `
 
 export const Title = styled.h1`
@@ -41,7 +41,7 @@ export const ScheduleBtn = styled.a`
   width: 260px;
   height: 52px;
   border: solid 2px #fff;
-  border-radius: 10px;
+  border-radius: 40px;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -52,7 +52,7 @@ export const ScheduleBtn = styled.a`
 
   :hover {
     background-color: #fff;
-    color: #008585;
+    color: var(--primary-color);
   }
 
   * {

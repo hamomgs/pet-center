@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect } from 'react'
 import AboutUs from '../../components/AboutUs/index.js'
 import Contact from '../../components/Contact/index.js'
+import Footer from '../../components/Footer/index.js'
 import Services from '../../components/Services/index.js'
 import * as S from './styles.js'
 
@@ -27,6 +28,7 @@ export default function Home() {
       <Services />
       <AboutUs />
       <Contact />
+      <Footer />
     </S.HomeSection>
   )
 }
