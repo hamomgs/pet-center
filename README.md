@@ -1,4 +1,4 @@
-<h1 align="center">pet-center</h1>
+<h1 align="center">Pet Center</h1>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/hamomgs/pet-center?color=%2304D361" />
@@ -53,6 +53,9 @@ $ npm start
 - [Styled-Components](https://styled-components.com)
 - [Node.js](https://nodejs.org/en/)
 - [React Router DOM](https://reactrouter.com/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [React Loader Spinner](https://www.npmjs.com/package/react-loader-spinner)
+- [React Dropdown](https://www.npmjs.com/package/react-dropdown)
 
 ## 📝 License
 

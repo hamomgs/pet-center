@@ -40,7 +40,7 @@ export default function Header() {
               <S.NavLink to='/adote' id='adopt'>Adoção</S.NavLink>
             </li>
             <li onClick={e => handleClickColor('products', e)}>
-              <S.NavLink to='/produtos' id='products'>Produtos</S.NavLink>
+              <S.NavLink to='/produto' id='products'>Produtos</S.NavLink>
             </li>
           </S.Ul>
         </S.NavigationMenu>
